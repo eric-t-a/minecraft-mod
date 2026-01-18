@@ -19,6 +19,10 @@ public class ModBlocks {
         "pink_garnet_block",
         AbstractBlock.Settings.create().strength(4.0f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)
     );
+    public static final Block RAW_PINK_GARNET_BLOCK = registerBlock(
+        "raw_pink_garnet_block",
+        AbstractBlock.Settings.create().strength(4.0f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)
+    );
 
     private static Block registerBlock(String name, AbstractBlock.Settings settings) {
         Identifier id = Identifier.of(TemplateMod.MOD_ID, name);
@@ -40,6 +44,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(PINK_GARNET_BLOCK);
+            entries.add(RAW_PINK_GARNET_BLOCK);
         }); 
     }
 }
