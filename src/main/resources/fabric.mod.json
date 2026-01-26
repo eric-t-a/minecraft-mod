@@ -26,7 +26,8 @@
 		]
 	},
 	"mixins": [
-		"tutorial-mod.mixins.json"
+		"tutorial-mod.mixins.json",
+		"tutorial-mod.client.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",

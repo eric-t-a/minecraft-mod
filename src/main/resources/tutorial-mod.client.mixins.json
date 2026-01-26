@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.example.tutorialmod.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"InvisibleBlockMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
